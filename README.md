@@ -12,3 +12,11 @@ git clone https://github.com/sg-s/upload.git
 ```
 
 and hack away. 
+
+#Troubleshooting
+
+If you see an error saying about permissions being denied, you have to 
+
+```
+chmod 777 uploads
+```
