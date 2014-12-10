@@ -8,4 +8,7 @@
 *  Now, copy these files there:
 
 ``` 
-git clone 
+git clone https://github.com/sg-s/upload.git
+```
+
+and hack away. 
