@@ -1,0 +1,148 @@
+/* This is the CSS stylesheet for http://srinivas.gs
+created by G S Srinivas ( http://srinivas.gs ) @ 20:31 on Thursday the 27th of January, 2011
+
+-- License --
+No license. Public Domain. Copy, improve, and pass on.
+
+-- Credits and thanks to -- 
+1) font-face code thanks to http://nicewebtype.com/notes/2009/10/30/how-to-use-css-font-face/ 
+2) As for the font, that's thanks to the League of Moveable Type
+http://www.theleagueofmoveabletype.com/fonts/8-goudy-bookletter-1911
+3) Loosely inspired by the design of http://daringfireball.net by John Gruber
+
+-- Contents -- 
+
+1. Fonts ----------------
+2. Basic Structure-------
+3. Class Specifications -
+4. ID definitions -------
+
+*/
+
+/* Chapter 1: Fonts */
+@font-face {
+  font-family: 'GoudyBookletter1911';
+  src: url('../assets/goudybookletter1911-webfont.eot');
+  src: local('â˜º'), 
+     url('../assets/goudybookletter1911-webfont.woff') format('woff'), 
+     url('../assets/goudybookletter1911-webfont.ttf') format('truetype'), 
+     url('../assets/goudybookletter1911-webfont.svg') format('svg'),
+     url('../assets/goudybookletter1911.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
+  height: 100%;
+  font-family: "Goudy Bookletter 1911", "GoudyBookletter1911", serif;
+  line-height: 1.8em;
+  font-size: 1.1em;
+  color: #191919;
+  /*background-color:#373d43;*/
+  background: #474747 url(../assets/bg.png);
+  text-align: center;
+  text-shadow: 0px 2px 3px #555;
+
+  }
+
+
+
+.container {
+  width: 70%;
+  height: 70%;
+  margin: 40px auto;
+
+}
+
+
+.outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.centered {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  padding: 1em;
+
+}
+
+a:link {
+  text-decoration: none; /*Supresses underlining, so we can spoof underlining with borders.*/
+  color: #ddd;
+  background-color: inherit;
+  color: #191919;
+  text-shadow: 0px 2px 3px #555;
+  }
+
+a:visited {
+  color: #ddd;
+  border-color: #373d43; /* The rationalte here is that visited links should dissapear*/
+  padding: 3px 0px 2px 0px;
+  }
+
+a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 15px #CFB4B4;
+  }
+
+
+
+#root {
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  font-size: 4em;
+  color: white;
+  text-align: center;
+
+  /*text shadow from here: http://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/*/
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#maintext {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+  text-align: left;
+}
+
+#ok {
+  margin-top: 2px;
+  color: white;
+  background: #1FAD37;
+  -webkit-border-radius:25px;
+  -moz-border-radius:25px;
+  -ms-border-radius:25px;
+  -o-border-radius:25px;
+  border-radius:25px;
+  width: 100%
+}
+
+#notok {
+  margin-top: 2px;
+  color: white;
+  background: #F32525;
+  -webkit-border-radius:25px;
+  -moz-border-radius:25px;
+  -ms-border-radius:25px;
+  -o-border-radius:25px;
+  border-radius:25px;
+  width: 100%
+}
