@@ -1,5 +1,9 @@
 #upload
 
+This is what it looks like:
+
+![](assets/hero.png)
+
 #Installation
 
 * You need a computer running Apache and PHP. The best way to do this is to install [MAMP](http://www.mamp.info/en/) (or equivalent)
